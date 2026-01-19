@@ -1,0 +1,123 @@
+{{ if or .Site.Params.primaryColor .Site.Params.headerBgColor .Site.Params.bodyBgColor .Site.Params.textColor .Site.Params.linkColor }}
+<style>
+/* Ensure footer reaches bottom */
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.site-content {
+  flex: 1;
+}
+
+{{ with .Site.Params.primaryColor }}
+:root {
+  --primary-color: {{ . }};
+}
+.category-label,
+.site-header-topbar .site-header-top-menu li a:hover,
+.site-header-topbar .site-header-top-menu li a:focus,
+button.search-toggle,
+.card_action .btn-link,
+.primary-color,
+p a, h1 a, h2 a, h3 a, h4 a, h5 a,
+.author-title a,
+.main-navigation #primary-menu>li>a:hover,
+.widget-area .widget a:hover,
+.widget-area .widget a:focus,
+.card-bg-image .card_body a:hover,
+.main-navigation #primary-menu>li.focus>a,
+.main-navigation #primary-menu>li.focus-visible>a,
+.category-label-group a:hover,
+.card_title a:hover,
+.card-blog-post .entry-meta a:hover,
+.post-navigation .nav-links>* a:hover,
+.post-navigation .nav-links>* a:focus,
+.wp-block-button.is-style-outline .wp-block-button__link,
+.site-footer a:hover {
+  color: {{ . }} !important;
+}
+.primary-bg,
+.btn-primary,
+.main-navigation ul ul a,
+.widget .widget-title:after,
+.search-form .search-submit,
+.category-label-group a:after,
+.posts-navigation .nav-links a,
+.category-label-group.bg-label a,
+.wp-block-button__link,
+.wp-block-button.is-style-outline .wp-block-button__link:hover,
+button,
+input[type=button],
+input[type=reset],
+input[type=submit],
+.pagination .page-numbers.current,
+.pagination .page-numbers:hover,
+.tagcloud .tag-cloud-link:hover,
+.ajax-pagination .show-more {
+  background-color: {{ . }} !important;
+}
+.primary-border,
+.btn-primary-border,
+.site-header-v2,
+.site-header-bottom,
+.wp-block-button.is-style-outline .wp-block-button__link,
+.ajax-pagination .show-more {
+  border-color: {{ . }} !important;
+}
+{{ end }}
+
+{{ with .Site.Params.headerBgColor }}
+.site-header {
+  background-color: {{ . }};
+}
+{{ end }}
+
+{{ with .Site.Params.bodyBgColor }}
+body {
+  background-color: {{ . }};
+}
+{{ end }}
+
+{{ with .Site.Params.textColor }}
+body {
+  color: {{ . }};
+}
+{{ end }}
+
+{{ with .Site.Params.linkColor }}
+a {
+  color: {{ . }};
+}
+{{ end }}
+
+{{ with .Site.Params.linkHoverColor }}
+a:hover,
+a:focus {
+  color: {{ . }};
+}
+{{ end }}
+
+{{ with .Site.Params.buttonColor }}
+button,
+.btn,
+.btn-link,
+input[type="submit"],
+input[type="button"],
+.search-submit,
+.card_action .btn-link {
+  background-color: {{ . }} !important;
+  border-color: {{ . }} !important;
+  color: #fff !important;
+}
+{{ end }}
+</style>
+{{ end }}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on The Noah Noah</title>
+    <link>http://localhost:1313/categories/</link>
+    <description>Recent content in Categories on The Noah Noah</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 16 Jan 2026 21:18:51 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Parenting</title>
+      <link>http://localhost:1313/categories/parenting/</link>
+      <pubDate>Fri, 16 Jan 2026 21:18:51 +0000</pubDate>
+      <guid>http://localhost:1313/categories/parenting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>The Noah Noah</title>
+      <link>http://localhost:1313/categories/the-noah-noah/</link>
+      <pubDate>Fri, 16 Jan 2026 21:18:51 +0000</pubDate>
+      <guid>http://localhost:1313/categories/the-noah-noah/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Food</title>
+      <link>http://localhost:1313/categories/food/</link>
+      <pubDate>Fri, 12 Nov 2021 18:42:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/food/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technology</title>
+      <link>http://localhost:1313/categories/technology/</link>
+      <pubDate>Sat, 21 Aug 2021 22:07:22 +0000</pubDate>
+      <guid>http://localhost:1313/categories/technology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Home</title>
+      <link>http://localhost:1313/categories/home/</link>
+      <pubDate>Thu, 15 Apr 2021 13:11:45 +0000</pubDate>
+      <guid>http://localhost:1313/categories/home/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TV Shows</title>
+      <link>http://localhost:1313/categories/tv-shows/</link>
+      <pubDate>Sun, 11 Apr 2021 13:21:37 +0000</pubDate>
+      <guid>http://localhost:1313/categories/tv-shows/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

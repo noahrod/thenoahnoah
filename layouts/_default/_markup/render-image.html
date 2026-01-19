@@ -1,0 +1,15 @@
+{{- $u := urls.Parse .Destination -}}
+{{- $width := $u.Query.Get "width" -}}
+{{- $height := $u.Query.Get "height" -}}
+<img src="{{ .Destination | safeURL }}"
+  alt="{{ .Text }}"
+  {{- with .Title }} title="{{ . }}"{{ end -}}
+  {{- if $width }} width="{{ $width }}"{{ end -}}
+  {{- if $height }} height="{{ $height }}"{{ end -}}
+  {{- if or $width $height -}}
+  style="display: block; margin: 0 auto;
+    {{- if $width }}width: {{ $width }}px;{{ end -}}
+    {{- if $height }}height: {{ $height }}px;{{ end -}}
+  "
+  {{- end -}}
+>

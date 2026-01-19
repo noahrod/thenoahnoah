@@ -1,0 +1,55 @@
+{{ define "main" }}
+<main class="site-main">
+	{{ if .Site.Params.showCarousel }}
+	{{ partial "carousel.html" . }}
+	{{ end }}
+	
+	{{ if .Site.Params.showCategorySection }}
+	{{ partial "category-section.html" . }}
+	{{ end }}
+	
+	<section class="blog-list-section sec-spacing">
+		<div class="container">
+			{{ $sidebarOption := .Site.Params.sidebarBlogPage | default "right-sidebar" }}
+			{{ $sidebarClass := "" }}
+			{{ if eq $sidebarOption "left-sidebar" }}
+				{{ $sidebarClass = "row-inverse-md" }}
+			{{ else if eq $sidebarOption "no-sidebar" }}
+				{{ $sidebarClass = "row-full-width" }}
+			{{ else if eq $sidebarOption "middle-column" }}
+				{{ $sidebarClass = "row-center-col" }}
+			{{ end }}
+			
+			<div class="row {{ $sidebarClass }}">
+				<div id="primary" class="col-12 col-md-2-3 col-lg-2-3">
+					{{ $masonryOption := .Site.Params.blogPageMasonry | default false }}
+					{{ $columnClass := "" }}
+					{{ if $masonryOption }}
+						{{ if eq $sidebarOption "no-sidebar" }}
+							{{ $columnClass = "fairy-three-column fairy-masonry" }}
+						{{ else }}
+							{{ $columnClass = "fairy-two-column fairy-masonry" }}
+						{{ end }}
+					{{ end }}
+					
+					<div class="fairy-content-area {{ $columnClass }}">
+						{{ $pages := where .Site.RegularPages "Layout" "ne" "search" }}
+						{{ $paginator := .Paginate $pages }}
+						{{ range $paginator.Pages }}
+							{{ partial "content/content.html" . }}
+						{{ end }}
+					</div>
+					
+					{{ partial "pagination.html" . }}
+				</div>
+				
+				{{ if or (eq $sidebarOption "left-sidebar") (eq $sidebarOption "right-sidebar") }}
+				<div id="secondary" class="col-12 col-md-1-3 col-lg-1-3">
+					{{ partial "sidebar.html" . }}
+				</div>
+				{{ end }}
+			</div>
+		</div>
+	</section>
+</main>
+{{ end }}

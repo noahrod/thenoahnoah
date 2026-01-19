@@ -1,0 +1,55 @@
+{{ define "main" }}
+<main class="site-main">
+	<section class="single-section sec-spacing">
+		<div class="container">
+			{{ $sidebarOption := .Params.sidebar | default .Site.Params.sidebarSinglePage | default "right-sidebar" }}
+			{{ $sidebarClass := "" }}
+			{{ if eq $sidebarOption "left-sidebar" }}
+				{{ $sidebarClass = "row-inverse-md" }}
+			{{ else if eq $sidebarOption "no-sidebar" }}
+				{{ $sidebarClass = "row-full-width" }}
+			{{ else if eq $sidebarOption "middle-column" }}
+				{{ $sidebarClass = "row-center-col" }}
+			{{ end }}
+			
+			<div class="row {{ $sidebarClass }}">
+				<div id="primary" class="col-1-1 col-md-2-3">
+					{{ if .Site.Params.showBreadcrumb }}
+					{{ partial "breadcrumb.html" . }}
+					{{ end }}
+					
+					{{ partial "content/content-single.html" . }}
+					
+					{{ if or .NextInSection .PrevInSection }}
+					<nav class="post-navigation" aria-label="{{ i18n "postNavigation" | default "Post navigation" }}">
+						<div class="nav-links">
+							{{ with .PrevInSection }}
+							<div class="nav-previous">
+								<a href="{{ .RelPermalink }}" rel="prev"><span class="nav-subtitle">{{ i18n "previous" | default "Previous:" }}</span> <span class="nav-title">{{ .Title }}</span></a>
+							</div>
+							{{ end }}
+							
+							{{ with .NextInSection }}
+							<div class="nav-next">
+								<a href="{{ .RelPermalink }}" rel="next"><span class="nav-subtitle">{{ i18n "next" | default "Next:" }}</span> <span class="nav-title">{{ .Title }}</span></a>
+							</div>
+							{{ end }}
+						</div>
+					</nav>
+					{{ end }}
+					
+					{{ if .Site.Params.showComments }}
+					{{ partial "comments.html" . }}
+					{{ end }}
+				</div>
+				
+				{{ if or (eq $sidebarOption "left-sidebar") (eq $sidebarOption "right-sidebar") }}
+				<div id="secondary" class="col-12 col-md-1-3 col-lg-1-3">
+					{{ partial "sidebar.html" . }}
+				</div>
+				{{ end }}
+			</div>
+		</div>
+	</section>
+</main>
+{{ end }}

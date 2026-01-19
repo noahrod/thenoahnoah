@@ -1,0 +1,16 @@
+{{ if .Site.Params.showCategorySection }}
+<section class="category-section">
+	<div class="container">
+		<div class="category-boxes">
+			{{ range first 4 .Site.Taxonomies.categories.ByCount }}
+			<div class="category-box">
+				<a href="{{ .Page.RelPermalink }}">
+					<h3>{{ .Page.Title }}</h3>
+					<span class="category-count">{{ .Count }} {{ if eq .Count 1 }}post{{ else }}posts{{ end }}</span>
+				</a>
+			</div>
+			{{ end }}
+		</div>
+	</div>
+</section>
+{{ end }}

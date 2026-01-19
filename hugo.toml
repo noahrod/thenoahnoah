@@ -1,0 +1,22 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'The Noah Noah'
+theme = "fairy-hugo"
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  description = "Este es un lugar de ambiente donde todo es diferente"
+  author = "Noe Rodriguez"
+  showTopHeader = false
+  showSearchButton = false
+  sidebarBlogPage = "right-sidebar"
+  showBreadcrumb = true
+  showGoToTop = true
+  primaryColor = "#3e63b6"      # Main accent color
+  logo = "logo.png"
+  favicon = "favicon.ico"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

@@ -1,0 +1,10 @@
+<form role="search" method="get" class="search-form" action="{{ .Site.BaseURL }}search/">
+	<label>
+		<span class="screen-reader-text">{{ i18n "search" | default "Search for:" }}</span>
+		<input type="search" class="search-field" placeholder="{{ i18n "searchPlaceholder" | default "Search..." }}" value="" name="q">
+	</label>
+	<button type="submit" class="search-submit">
+		<i class="fa fa-search"></i>
+		<span class="screen-reader-text">{{ i18n "search" | default "Search" }}</span>
+	</button>
+</form>

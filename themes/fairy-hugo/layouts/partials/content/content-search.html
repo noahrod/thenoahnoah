@@ -1,0 +1,65 @@
+<article id="post-{{ .Permalink | md5 }}" class="post type-post {{ with .Params.classes }}{{ delimit . " " }}{{ end }}">
+	{{ $imageAlignment := .Site.Params.blogPageImageAlignment | default "normal" }}
+	{{ $imageAlignmentClass := "" }}
+	{{ if eq $imageAlignment "full-image" }}
+		{{ $imageAlignmentClass = "card-full-width" }}
+	{{ end }}
+	
+	<div class="card card-blog-post {{ $imageAlignmentClass }}">
+		{{ if .Params.featured_image }}
+		<figure class="post-thumbnail card_media">
+			<a href="{{ .RelPermalink }}">
+				{{ $image := .Resources.GetMatch .Params.featured_image }}
+				{{ if $image }}
+					<img src="{{ $image.RelPermalink }}" alt="{{ .Title }}">
+				{{ end }}
+			</a>
+		</figure>
+		{{ end }}
+		
+		<div class="card_body">
+			<div>
+				{{ if eq .Type "post" }}
+				{{ with .Params.categories }}
+				<div class="category-label-group">
+					{{ range . }}
+					{{ with $.Site.GetPage "taxonomy" (printf "categories/%s" (urlize .)) }}
+					<a href="{{ .RelPermalink }}" class="category-label">{{ .Title }}</a>
+					{{ end }}
+					{{ end }}
+				</div>
+				{{ end }}
+				{{ end }}
+				
+				<h2 class="card_title">
+					<a href="{{ .RelPermalink }}" rel="bookmark">{{ .Title }}</a>
+				</h2>
+				
+				{{ if eq .Type "post" }}
+				<div class="entry-meta">
+					<span class="posted-on">
+						<a href="{{ .RelPermalink }}">
+							<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+								{{ .Date.Format "January 2, 2006" }}
+							</time>
+						</a>
+					</span>
+				</div>
+				{{ end }}
+			</div>
+			
+			<div>
+				<div class="entry-content">
+					{{ .Summary }}
+				</div>
+				
+				<div class="card_action">
+					<a href="{{ .RelPermalink }}" class="btn-link">
+						{{ i18n "readMore" | default "Read More" }}
+						<i class="fa fa-arrow-right"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>

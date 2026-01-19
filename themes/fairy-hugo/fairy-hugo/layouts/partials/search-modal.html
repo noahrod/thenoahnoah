@@ -1,0 +1,8 @@
+{{ if .Site.Params.showSearchButton }}
+<section class="search-section">
+	<div class="container">
+		<button class="close-btn"><i class="fa fa-times"></i></button>
+		{{ partial "search-form.html" . }}
+	</div>
+</section>
+{{ end }}

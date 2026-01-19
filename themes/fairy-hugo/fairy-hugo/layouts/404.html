@@ -1,0 +1,33 @@
+{{ define "title" }}{{ i18n "pageNotFound" | default "404 - Page Not Found" }} | {{ .Site.Title }}{{ end }}
+
+{{ define "main" }}
+<main id="primary" class="site-main">
+	<section class="error-404 not-found sec-spacing">
+		<div class="container">
+			<div class="error-404-content">
+				<div class="page-header">
+					<h1 class="error-404-title">404</h1>
+					<h2 class="page-title">{{ i18n "pageNotFoundTitle" | default "Oops! That page can't be found." }}</h2>
+				</div>
+
+				<div class="page-content">
+					<p>{{ i18n "pageNotFoundText" | default "It looks like nothing was found at this location. Maybe try one of the links below or a search?" }}</p>
+					
+					{{ partial "search-form.html" . }}
+					
+					{{ if .Site.Params.show404Links }}
+					<div class="widget widget_recent_entries">
+						<h2 class="widget-title">{{ i18n "recentPosts" | default "Recent Posts" }}</h2>
+						<ul>
+						{{ range first 5 (where .Site.RegularPages "Type" "post") }}
+							<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+						{{ end }}
+						</ul>
+					</div>
+					{{ end }}
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+{{ end }}

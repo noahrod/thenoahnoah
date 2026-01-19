@@ -1,0 +1,66 @@
+{{ if .Site.Params.showNewsletter }}
+{{ partial "newsletter.html" . }}
+{{ end }}
+
+<footer id="colophon" class="site-footer">
+	{{ if or (fileExists "data/footer1.toml") (fileExists "data/footer2.toml") (fileExists "data/footer3.toml") }}
+	<section class="site-footer-top">
+		<div class="container">
+			<div class="row">
+				{{ if fileExists "data/footer1.toml" }}
+				<div class="col-12 col-sm-1-1 col-md-1-3">
+					{{ partial "widgets/footer-1.html" . }}
+				</div>
+				{{ end }}
+				
+				{{ if fileExists "data/footer2.toml" }}
+				<div class="col-12 col-sm-1-1 col-md-1-3">
+					{{ partial "widgets/footer-2.html" . }}
+				</div>
+				{{ end }}
+				
+				{{ if fileExists "data/footer3.toml" }}
+				<div class="col-12 col-sm-1-1 col-md-1-3">
+					{{ partial "widgets/footer-3.html" . }}
+				</div>
+				{{ end }}
+			</div>
+		</div>
+	</section>
+	{{ end }}
+	
+	<section class="site-footer-bottom">
+		<div class="container">
+			<div class="fairy-menu-social">
+				{{ if .Site.Menus.footer_social }}
+				{{ partial "social-icons.html" . }}
+				{{ end }}
+			</div>
+			
+			<div class="site-info">
+				{{ with .Site.Params.copyright }}
+				<p class="copyright-text">{{ . | markdownify }}</p>
+				{{ else }}
+				<p class="copyright-text">
+					&copy; {{ now.Format "2006" }} {{ .Site.Title }}. 
+					{{ i18n "allRightsReserved" | default "All rights reserved." }}
+				</p>
+				{{ end }}
+				
+				{{ if .Site.Params.showThemeCredit }}
+				<p class="theme-info">
+					{{ i18n "poweredBy" | default "Powered by" }} <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>
+					{{ i18n "and" | default "&" }}
+					<a href="https://www.candidthemes.com/themes/fairy" target="_blank" rel="noopener">Fairy Theme</a>
+				</p>
+				{{ end }}
+			</div>
+		</div>
+	</section>
+</footer>
+
+{{ if .Site.Params.showGoToTop }}
+<a href="javascript:void(0);" class="footer-go-to-top go-to-top">
+	<i class="fa fa-angle-up"></i>
+</a>
+{{ end }}

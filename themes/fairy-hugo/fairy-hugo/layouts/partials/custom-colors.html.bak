@@ -1,0 +1,65 @@
+{{ if or .Site.Params.primaryColor .Site.Params.headerBgColor .Site.Params.bodyBgColor .Site.Params.textColor .Site.Params.linkColor }}
+<style>
+/* Ensure footer reaches bottom */
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.site-content {
+  flex: 1;
+}
+
+{{ with .Site.Params.primaryColor }}
+:root {
+  --primary-color: {{ . }};
+}
+.category-label,
+.site-header-topbar .site-header-top-menu li a:hover,
+.site-header-topbar .site-header-top-menu li a:focus,
+button.search-toggle,
+.card_action .btn-link {
+  color: {{ . }};
+}
+{{ end }}
+
+{{ with .Site.Params.headerBgColor }}
+.site-header {
+  background-color: {{ . }};
+}
+{{ end }}
+
+{{ with .Site.Params.bodyBgColor }}
+body {
+  background-color: {{ . }};
+}
+{{ end }}
+
+{{ with .Site.Params.textColor }}
+body {
+  color: {{ . }};
+}
+{{ end }}
+
+{{ with .Site.Params.linkColor }}
+a {
+  color: {{ . }};
+}
+{{ end }}
+
+{{ with .Site.Params.linkHoverColor }}
+a:hover,
+a:focus {
+  color: {{ . }};
+}
+{{ end }}
+</style>
+{{ end }}

@@ -1,0 +1,81 @@
+<article id="post-{{ .Permalink | md5 }}" class="post type-post {{ with .Params.classes }}{{ delimit . " " }}{{ end }}">
+	{{ $imageAlignment := .Site.Params.blogPageImageAlignment | default "normal" }}
+	{{ $imageAlignmentClass := "" }}
+	{{ if eq $imageAlignment "full-image" }}
+		{{ $imageAlignmentClass = "card-full-width" }}
+	{{ end }}
+	
+	<div class="card card-blog-post {{ $imageAlignmentClass }}">
+		{{ if .Params.featured_image }}
+		<figure class="post-thumbnail card_media">
+			<a href="{{ .RelPermalink }}">
+				{{ $image := .Resources.GetMatch .Params.featured_image }}
+				{{ if $image }}
+					{{ $croppedImage := .Site.Params.imageSizeBlogPage | default "medium" }}
+					{{ if eq $croppedImage "cropped-image" }}
+						{{ $resized := $image.Fill "800x600" }}
+						<img src="{{ $resized.RelPermalink }}" alt="{{ .Title }}">
+					{{ else }}
+						<img src="{{ $image.RelPermalink }}" alt="{{ .Title }}">
+					{{ end }}
+				{{ else }}
+					<img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}">
+				{{ end }}
+			</a>
+		</figure>
+		{{ end }}
+		
+		<div class="card_body">
+			<div>
+				{{ with .Params.categories }}
+				<div class="category-label-group">
+					{{ range . }}
+					{{ with $.Site.GetPage "taxonomy" (printf "categories/%s" (urlize .)) }}
+					<a href="{{ .RelPermalink }}" class="category-label">{{ .Title }}</a>
+					{{ end }}
+					{{ end }}
+				</div>
+				{{ end }}
+				
+				<h2 class="card_title">
+					<a href="{{ .RelPermalink }}" rel="bookmark">{{ .Title }}</a>
+				</h2>
+				
+				{{ if eq .Type "post" }}
+				<div class="entry-meta">
+					<span class="posted-on">
+						<i class="fa fa-calendar"></i>
+						<a href="{{ .RelPermalink }}">
+							<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+								{{ .Date.Format "January 2, 2006" }}
+							</time>
+						</a>
+					</span>
+					{{ with .Params.author }}
+					<span class="byline">
+						<span class="author vcard">
+							<i class="fa fa-user"></i>
+							{{ i18n "by" | default "by" }} <a class="url fn n" href="#">{{ . }}</a>
+						</span>
+					</span>
+					{{ end }}
+				</div>
+				{{ end }}
+			</div>
+			
+			<div>
+				<div class="entry-content">
+					{{ $excerptLength := .Site.Params.excerptLength | default 150 }}
+					{{ $summary := .Summary | plainify | truncate $excerptLength }}
+					<p>{{ $summary }}</p>
+				</div>
+
+				<div class="card_action">
+					<a href="{{ .RelPermalink }}" class="btn btn-primary">
+						{{ i18n "readMore" | default "Read More" }}
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>

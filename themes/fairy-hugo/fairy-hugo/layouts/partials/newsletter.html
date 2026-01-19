@@ -1,0 +1,14 @@
+{{ if .Site.Params.showNewsletter }}
+<section class="newsletter-section">
+	<div class="container">
+		<div class="newsletter-content">
+			<h2>{{ i18n "subscribeNewsletter" | default "Subscribe to Newsletter" }}</h2>
+			<p>{{ i18n "newsletterText" | default "Get the latest posts delivered right to your inbox" }}</p>
+			<form class="newsletter-form" action="#" method="post">
+				<input type="email" placeholder="{{ i18n "emailPlaceholder" | default "Your email address" }}" required>
+				<button type="submit">{{ i18n "subscribe" | default "Subscribe" }}</button>
+			</form>
+		</div>
+	</div>
+</section>
+{{ end }}

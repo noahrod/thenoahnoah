@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>General on Fairy - Minimal Hugo Blog Theme</title>
+    <link>http://localhost:1313/categories/general/</link>
+    <description>Recent content in General on Fairy - Minimal Hugo Blog Theme</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/general/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome to Fairy Hugo Theme</title>
+      <link>http://localhost:1313/post/welcome/</link>
+      <pubDate>Thu, 18 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/welcome/</guid>
+      <description>&lt;p&gt;Welcome to the Fairy Hugo Theme! This is a minimal and beautiful blog theme converted from the popular WordPress Fairy theme.&lt;/p&gt;&#xA;&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;&#xA;&lt;p&gt;This theme includes many great features:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Responsive Design&lt;/strong&gt;: Looks great on all devices&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Multiple Layouts&lt;/strong&gt;: Choose from different sidebar options&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Clean Typography&lt;/strong&gt;: Easy to read content&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Fast Performance&lt;/strong&gt;: Built with Hugo for speed&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;SEO Friendly&lt;/strong&gt;: Optimized for search engines&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h2&gt;&#xA;&lt;p&gt;To get started with this theme, check out the &lt;a href=&#34;https://github.com/candidthemes/fairy-hugo&#34;&gt;documentation&lt;/a&gt; for installation and configuration instructions.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

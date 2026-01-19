@@ -1,0 +1,75 @@
+# Navigation
+[skipToContent]
+other = "Skip to content"
+[home]
+other = "Home"
+[search]
+other = "Search"
+[searchPlaceholder]
+other = "Search..."
+[searchResults]
+other = "Search Results for"
+
+# Post meta
+[by]
+other = "by"
+[on]
+other = "on"
+[readMore]
+other = "Read More"
+[continueReading]
+other = "Continue reading"
+
+# Navigation
+[previous]
+other = "Previous"
+[next]
+other = "Next"
+[pagination]
+other = "Pagination"
+[postNavigation]
+other = "Post navigation"
+
+# Taxonomies
+[categories]
+other = "Categories"
+[tags]
+other = "Tags"
+[category]
+other = "Category"
+[tag]
+other = "Tag"
+
+# Common
+[recentPosts]
+other = "Recent Posts"
+[relatedPosts]
+other = "Related Posts"
+[allRightsReserved]
+other = "All rights reserved"
+[poweredBy]
+other = "Powered by"
+[and]
+other = "&"
+[scrollToTop]
+other = "Scroll to top"
+[breadcrumb]
+other = "Breadcrumb"
+
+# Error pages
+[pageNotFound]
+other = "404 - Page Not Found"
+[pageNotFoundTitle]
+other = "Oops! That page can't be found."
+[pageNotFoundText]
+other = "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+
+# Search/Archive
+[nothingFound]
+other = "Nothing Found"
+[nothingFoundHome]
+other = "Ready to publish your first post? Get started by creating content."
+[nothingFoundSearch]
+other = "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+[nothingFoundDefault]
+other = "It seems we can't find what you're looking for. Perhaps searching can help."

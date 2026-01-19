@@ -1,0 +1,20 @@
+<article id="page-{{ .Permalink | md5 }}" class="page type-page {{ with .Params.classes }}{{ delimit . " " }}{{ end }}">
+	<div class="card card-blog-post card-full-width">
+		{{ if .Params.featured_image }}
+		<figure class="card_media">
+			{{ $image := .Resources.GetMatch .Params.featured_image }}
+			{{ if $image }}
+				<img src="{{ $image.RelPermalink }}" alt="{{ .Title }}">
+			{{ end }}
+		</figure>
+		{{ end }}
+		
+		<div class="card_body">
+			<h1 class="card_title">{{ .Title }}</h1>
+			
+			<div class="entry-content">
+				{{ .Content }}
+			</div>
+		</div>
+	</div>
+</article>

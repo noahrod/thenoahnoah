@@ -1,0 +1,11 @@
+<div class="widget widget_recent_entries">
+	<h2 class="widget-title">{{ i18n "recentPosts" | default "Recent Posts" }}</h2>
+	<ul>
+	{{ range first 5 (where .Site.RegularPages "Type" "post") }}
+		<li>
+			<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+			<span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
+		</li>
+	{{ end }}
+	</ul>
+</div>

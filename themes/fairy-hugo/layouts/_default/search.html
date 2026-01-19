@@ -1,0 +1,39 @@
+{{ define "title" }}{{ i18n "searchResults" | default "Search Results for" }}: {{ .Title }} | {{ .Site.Title }}{{ end }}
+
+{{ define "main" }}
+<main class="site-main">
+	<section class="blog-list-section search-section sec-spacing">
+		<div class="container">
+			{{ $sidebarOption := .Site.Params.sidebarBlogPage | default "right-sidebar" }}
+			{{ $sidebarClass := "" }}
+			{{ if eq $sidebarOption "left-sidebar" }}
+				{{ $sidebarClass = "row-inverse-md" }}
+			{{ else if eq $sidebarOption "no-sidebar" }}
+				{{ $sidebarClass = "row-full-width" }}
+			{{ else if eq $sidebarOption "middle-column" }}
+				{{ $sidebarClass = "row-center-col" }}
+			{{ end }}
+			
+			<div class="row {{ $sidebarClass }}">
+				<div id="primary" class="col-1-1 col-md-2-3">
+					<div class="page-header">
+						<h1 class="page-title">
+							{{ i18n "searchResults" | default "Search Results" }}
+						</h1>
+					</div>
+
+					<div id="search-results" class="fairy-content-area">
+						<!-- Results will be inserted here by JavaScript -->
+					</div>
+				</div>
+				
+				{{ if or (eq $sidebarOption "left-sidebar") (eq $sidebarOption "right-sidebar") }}
+				<div id="secondary" class="col-12 col-md-1-3 col-lg-1-3">
+					{{ partial "sidebar.html" . }}
+				</div>
+				{{ end }}
+			</div>
+		</div>
+	</section>
+</main>
+{{ end }}

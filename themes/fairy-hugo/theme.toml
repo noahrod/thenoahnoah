@@ -1,0 +1,17 @@
+name = "Fairy"
+license = "GPL-2.0"
+licenselink = "http://www.gnu.org/licenses/gpl-2.0.html"
+description = "Fairy is a free and minimal Hugo blog theme converted from WordPress. It's perfect for travel blogs, food blogs, technology blogs and fashion blogs."
+homepage = "https://www.candidthemes.com/themes/fairy"
+tags = ["blog", "minimal", "responsive", "clean", "grid"]
+features = ["responsive", "blog", "sidebar", "widgets", "custom-colors"]
+min_version = "0.112.0"
+
+[author]
+  name = "candidthemes"
+  homepage = "https://www.candidthemes.com/"
+
+[original]
+  name = "Fairy WordPress Theme"
+  homepage = "https://www.candidthemes.com/themes/fairy"
+  repo = "https://github.com/candidthemes"

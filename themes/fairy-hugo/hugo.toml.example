@@ -1,0 +1,127 @@
+baseURL = "https://example.com/"
+languageCode = "en-us"
+title = "Fairy Hugo Theme"
+theme = "fairy-hugo"
+
+[pagination]
+  pagerSize = 10
+enableRobotsTXT = true
+enableEmoji = true
+
+[params]
+  description = "A minimal and beautiful blog theme"
+  author = "Your Name"
+  
+  # Header settings
+  logo = "" # Path to logo file in static folder
+  showTopHeader = true
+  showSearchButton = true
+  showSearchModal = true
+  
+  # Sidebar settings
+  sidebarBlogPage = "right-sidebar" # Options: left-sidebar, right-sidebar, no-sidebar, middle-column
+  sidebarSinglePage = "right-sidebar"
+  
+  # Blog page settings
+  blogPageMasonry = false # Enable masonry layout
+  blogPageImageAlignment = "normal" # Options: normal, full-image
+  imageSizeBlogPage = "medium" # Options: medium, cropped-image
+  contentShowFrom = "excerpt" # Options: excerpt, content
+  showReadMore = true
+  
+  # Single page settings
+  showSingleFeaturedImage = true
+  showSingleTags = true
+  showRelatedPosts = true
+  
+  # Features
+  showBreadcrumb = true
+  showCarousel = false
+  showCategorySection = false
+  showNewsletter = false
+  showComments = false # Set to true and configure Disqus below
+  show404Links = true
+  showGoToTop = true
+  showThemeCredit = true
+  
+  # Social & Analytics
+  googleAnalytics = "" # Your GA tracking ID
+  favicon = "" # Path to favicon in static folder
+  
+  # Custom CSS files (relative to static folder)
+  # customCSS = ["css/custom.css"]
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+    
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+    
+  [[menu.main]]
+    name = "Blog"
+    url = "/post/"
+    weight = 3
+    
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
+  
+  # Top menu (appears in top header)
+  [[menu.top]]
+    name = "Privacy"
+    url = "/privacy/"
+    weight = 1
+  
+  # Social menu
+  [[menu.social]]
+    name = "facebook"
+    url = "https://facebook.com/yourpage"
+    weight = 1
+    
+  [[menu.social]]
+    name = "twitter"
+    url = "https://twitter.com/yourhandle"
+    weight = 2
+    
+  [[menu.social]]
+    name = "instagram"
+    url = "https://instagram.com/yourhandle"
+    weight = 3
+
+# Taxonomy settings
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+# Markup settings
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "monokai"
+    lineNos = false
+
+# Privacy settings
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = false
+    anonymizeIP = true
+    respectDoNotTrack = true
+
+# Permalinks
+[permalinks]
+  post = "/:year/:month/:slug/"
+
+# Output formats for search
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]

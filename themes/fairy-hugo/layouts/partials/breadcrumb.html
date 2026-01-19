@@ -1,0 +1,17 @@
+{{ if .Site.Params.showBreadcrumb }}
+<div class="fairy-breadcrumb-wrapper">
+	<div class="breadcrumbs">
+		<span>
+			<a href="{{ .Site.BaseURL }}">{{ i18n "home" | default "Home" }}</a>
+		</span>
+		{{ range .Ancestors.Reverse }}
+		<span class="breadcrumb-separator"> / </span>
+		<span>
+			<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+		</span>
+		{{ end }}
+		<span class="breadcrumb-separator"> / </span>
+		<span class="breadcrumb-current">{{ .Title }}</span>
+	</div>
+</div>
+{{ end }}

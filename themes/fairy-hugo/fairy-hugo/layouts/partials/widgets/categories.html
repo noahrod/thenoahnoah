@@ -1,0 +1,8 @@
+<div class="widget widget_categories">
+	<h2 class="widget-title">{{ i18n "categories" | default "Categories" }}</h2>
+	<ul>
+	{{ range .Site.Taxonomies.categories }}
+		<li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> ({{ .Count }})</li>
+	{{ end }}
+	</ul>
+</div>

@@ -1,0 +1,17 @@
+<section class="no-results not-found">
+	<header class="page-header">
+		<h1 class="page-title">{{ i18n "nothingFound" | default "Nothing Found" }}</h1>
+	</header>
+
+	<div class="page-content">
+		{{ if .IsHome }}
+		<p>{{ i18n "nothingFoundHome" | default "Ready to publish your first post? Get started by creating content." }}</p>
+		{{ else if eq .Kind "search" }}
+		<p>{{ i18n "nothingFoundSearch" | default "Sorry, but nothing matched your search terms. Please try again with some different keywords." }}</p>
+		{{ partial "search-form.html" . }}
+		{{ else }}
+		<p>{{ i18n "nothingFoundDefault" | default "It seems we can't find what you're looking for. Perhaps searching can help." }}</p>
+		{{ partial "search-form.html" . }}
+		{{ end }}
+	</div>
+</section>

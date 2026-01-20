@@ -4,7 +4,7 @@ slug: using-medela-parts-with-spectra-pumps
 date: 2021-04-02T11:54:26
 categories: ["Parenting", "The Noah Noah"]
 author: Noe Rodriguez
-featured_image: "spectra-medela-adapter.jpg"
+featured_image: "/images/spectra-medela-adapter.jpg"
 ---
 My son was born at the Ascension Columbia St. Mary's Hospital in Milwaukee. I still remember the views of Lake Michigan from our hospital room. Here at this hospital they use the Medela Symphony pump, so for my wife it was the first pump that she tried. I can tell you that this particular pump was really easy to operate, and that my wife really liked the way the pump parts felt.
 
@@ -12,7 +12,7 @@ We were also lucky enough that her sister owned the same pump and was kind enoug
 
 After a couple of months it was time to give back the Medela Symphony pump to my sister-in-law, so Julie asked me to look for an adapter to be able to connect the Medela Parts to the Spectra pump. Looks like the most common adapter is this one:
 
-![](/cheap-adapter-medela-speactra.jpg)
+![](/images/cheap-adapter-medela-speactra.jpg)
 
 But there are a couple of things I didn't like about this adapter, firstly you have two connection points, so you can definetly lose pump power because of this, and secondly, it's so small it could easily get lost.
 

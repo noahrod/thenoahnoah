@@ -4,7 +4,7 @@ slug: the-birthday-coupons
 date: 2021-11-12T18:42:00
 categories: ["Food", "The Noah Noah"]
 author: Noe Rodriguez
-featured_image: "kk.png"
+featured_image: "/images/kk.png"
 ---
 One of the things I enjoy the most of living in the States, is that almost every business has some sort of rewards program. Particularly after COVID-19, I feel like more and more businesses are trying to find a way to push you to come back to their stores and spend some money.
 

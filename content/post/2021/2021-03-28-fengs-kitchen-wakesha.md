@@ -4,7 +4,7 @@ slug: fengs-kitchen-wakesha
 date: 2021-03-28T12:02:58
 categories: ["Food", "The Noah Noah"]
 author: Noe Rodriguez
-featured_image: "fengs.jpg"
+featured_image: "/images/fengs.jpg"
 ---
 Sometimes I feel like I need more vegetables in my diet. Living here in the States it's kind of hard to find vegetables when you are looking at fast food or even at local owned restaurants. And I think this is why people google things like: "is potato a vegetable?" (the answer is yes, I googled it myself).
 
@@ -16,7 +16,7 @@ Also, since I started this journey of being a parent, I love that they have a de
 
 My favorite dish there is the beef with Chinese vegetables combo that comes with pork fried rice. The brown sauce is super delicious, and the veggies are always fresh.
 
-![](/fengsMeal.jpg)
+![](/images/fengsMeal.jpg)
 
 The only thing I don't like that much, is that they sell Pepsi products, but that doesn't really matter when you order for carry out.
 

@@ -4,7 +4,7 @@ slug: mining-ethereum-with-ubuntu-21-04
 date: 2021-08-09T15:10:05
 categories: ["Technology", "The Noah Noah"]
 author: Noe Rodriguez
-featured_image: "greenwithenvy.png"
+featured_image: "/images/greenwithenvy.png"
 ---
 Since mining is a task that doesn't really require a graphical interface, using Linux as OS sounds really ideal for this matter. If you are like me, an enthusiast experimenting with mining, then you already have watched lots of videos on how the professionals are doing it. My goal right now is to be able to run a mining ring without a hard drive, running everything from RAM. If you are here because of that, let me tell you that I'm not there yet, but hopefully will be soon.
 
@@ -19,7 +19,7 @@ After this long and boring introduction, let me share with you how I'm running m
 2.  **Install Nvidia Drivers**
     *   Nothing too difficult either:
         1.  Detect the model of your Nvidia cards and the recommended driver:
-            *   ![](/ubuntu-drivers-devices.png)
+            *   ![](/images/ubuntu-drivers-devices.png)
                 
         2.  If you like the recommendations use the same command to install the driver:
             *   "sudo ubuntu-drivers autoinstall" && "sudo apt install nvidia-driver-465"

@@ -29,7 +29,12 @@
     searchResults.innerHTML = '<p>Loading search results...</p>';
 
     // Load search index
-    fetch('/index.json')
+    var indexUrl = '/index.json';
+    if (typeof hugoBaseUrl !== 'undefined') {
+        indexUrl = hugoBaseUrl + 'index.json';
+    }
+    
+    fetch(indexUrl)
         .then(function(response) {
             console.log('Index fetch response:', response.status);
             if (!response.ok) {

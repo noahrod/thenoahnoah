@@ -49,6 +49,10 @@
 	<!-- jQuery - using 1.12.4 for compatibility with legacy code -->
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 	
+	<script>
+		var hugoBaseUrl = "{{ .Site.BaseURL }}";
+	</script>
+
 	{{ $navigation := resources.Get "js/navigation.js" }}
 	{{ $custom := resources.Get "js/custom.js" }}
 	{{ $search := resources.Get "js/search.js" }}

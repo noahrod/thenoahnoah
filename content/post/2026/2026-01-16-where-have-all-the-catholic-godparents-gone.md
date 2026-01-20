@@ -3,7 +3,7 @@ title: "Where Have All the Catholic Godparents Gone?"
 slug: where-have-all-the-catholic-godparents-gone
 date: 2026-01-16T21:18:51
 categories: ["Parenting", "The Noah Noah"]
-featured_image: "/images/celebrate-becoming-a-catholic-child-baptism.jpg"
+featured_image: "./images/celebrate-becoming-a-catholic-child-baptism.jpg"
 author: Noe Rodriguez
 ---
 A baptism is such a joyful moment, watching a family welcome a new baby into the faith community. But behind the scenes, there is a growing challenge that many parishes are facing: it is becoming surprisingly hard to find eligible godparents.

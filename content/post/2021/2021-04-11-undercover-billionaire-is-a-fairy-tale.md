@@ -4,7 +4,7 @@ slug: undercover-billionaire-is-a-fairy-tale
 date: 2021-04-11T13:21:37
 categories: ["The Noah Noah", "TV Shows"]
 author: Noe Rodriguez
-featured_image: "/images/undercovermillionare.jpeg"
+featured_image: "./images/undercovermillionare.jpeg"
 ---
 I've been watching a lot of shows on Hulu lately, I mean what else can you do during COVID-19 times, right?
 

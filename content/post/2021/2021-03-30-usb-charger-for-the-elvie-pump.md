@@ -4,7 +4,7 @@ slug: usb-charger-for-the-elvie-pump
 date: 2021-03-30T11:05:36
 categories: ["Parenting", "Technology", "The Noah Noah"]
 author: Noe Rodriguez
-featured_image: "/images/anker_usb.jpg"
+featured_image: "./images/anker_usb.jpg"
 ---
 Before the birth of my son I had zero knowledge about breast pumps. When people tell you about their experience of being a parent, most people focus on the birth part, but honestly I think breastfeeding is a lot of work and they should start mentioning more about this journey (at least to dudes like me with useless breasts). I also understand that every family is different and that not everyone is able to or chooses to breastfeed.
 
@@ -14,7 +14,7 @@ The problem is that they don't ship a wall charger with it (very Apple like), an
 
 Looking around on Amazon for a good deal for a wall charger with two USB ports I found this one:
 
-![](/images/anker_usb.jpg?width=300)
+![](./images/anker_usb.jpg?width=300)
 
 It's a two pack for a really good price, so you can keep one at home and one at work, or one in the living room and the other one in your room.
 

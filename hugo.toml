@@ -3,12 +3,12 @@ canonifyURLs = true
 languageCode = 'en-us'
 title = 'The Noah Noah'
 theme = "fairy-hugo"
-googleAnalytics = "G-9CFXRLCZGJ"
 
 [pagination]
   pagerSize = 10
 
 [params]
+  googleAnalytics = "G-9CFXRLCZGJ"
   description = "Este es un lugar de ambiente donde todo es diferente"
   author = "Noe Rodriguez"
   showTopHeader = false

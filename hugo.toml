@@ -26,3 +26,33 @@ theme = "fairy-hugo"
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[[menu.main]]
+  name = "About me"
+  url = "/about-me"
+  weight = 1
+
+[[menu.main]]
+  name = "Parenting"
+  url = "/categories/parenting/"
+  weight = 2
+
+[[menu.main]]
+  name = "Technology"
+  url = "/categories/technology/"
+  weight = 3
+
+[[menu.main]]
+  name = "Food"
+  url = "/categories/food/"
+  weight = 4
+
+[[menu.main]]
+  name = "TV Shows"
+  url = "/categories/tv-shows/"
+  weight = 5
+
+[[menu.main]]
+  name = "Home"
+  url = "/categories/home/"
+  weight = 6

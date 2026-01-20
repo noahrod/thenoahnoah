@@ -16,6 +16,7 @@ theme = "fairy-hugo"
   sidebarBlogPage = "right-sidebar"
   showBreadcrumb = true
   showGoToTop = true
+  showComments = true
   primaryColor = "#3e63b6"      # Main accent color
   logo = "logo.png"
   favicon = "favicon.ico"

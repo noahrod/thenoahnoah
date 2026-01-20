@@ -9,3 +9,12 @@
   gtag('config', '{{ . }}');
 </script>
 {{ end }}
+
+{{ if .Params.featured_image }}
+  {{ $image := .Resources.GetMatch .Params.featured_image }}
+  {{ if $image }}
+    <meta property="og:image" content="{{ $image.Permalink }}" />
+  {{ else }}
+    <meta property="og:image" content="{{ .Params.featured_image | absURL }}" />
+  {{ end }}
+{{ end }}

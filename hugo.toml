@@ -1,4 +1,4 @@
-baseURL = 'https://noahrod.github.io/thenoahnoah/'
+baseURL = 'https://thenoahnoah.com/'
 canonifyURLs = true
 languageCode = 'en-us'
 title = 'The Noah Noah'

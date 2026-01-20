@@ -5,6 +5,8 @@
 			{{ $image := .Resources.GetMatch .Params.featured_image }}
 			{{ if $image }}
 				<img src="{{ $image.RelPermalink }}" alt="{{ .Title }}">
+			{{ else }}
+				<img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}">
 			{{ end }}
 		</figure>
 		{{ end }}

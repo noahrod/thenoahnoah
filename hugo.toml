@@ -8,6 +8,7 @@ theme = "fairy-hugo"
   pagerSize = 10
 
 [params]
+  showSingleFeaturedImage = true
   googleAnalytics = "G-9CFXRLCZGJ"
   description = "Este es un lugar de ambiente donde todo es diferente"
   author = "Noe Rodriguez"

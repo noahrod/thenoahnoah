@@ -1,4 +1,5 @@
-baseURL = 'https://noahrod.github.io'
+baseURL = 'https://noahrod.github.io/thenoahnoah'
+relativeURLs = false
 languageCode = 'en-us'
 title = 'The Noah Noah'
 theme = "fairy-hugo"

@@ -4,7 +4,7 @@ slug: the-mcdonalds-app
 date: 2021-04-01T12:29:31
 categories: ["Food", "The Noah Noah"]
 author: Noe Rodriguez
-featured_image: "./images/mcdonaldsapp.png"
+featured_image: "/images/mcdonaldsapp.png"
 ---
 One of the things I never realized before watching the movie "[The Founder](https://en.wikipedia.org/wiki/The_Founder)", is that you can find as many McDonald's restaurants, as you can find churches in the States. There is even a line in the movie that refers to this very specifically:
 
@@ -21,13 +21,13 @@ Just let me share with you how I get their new "Crispy Chicken Sandwich" with la
 
 Step one, use this coupon for the free sandwich:
 
-![](./images/McDonalds_App_ScreenShot.jpg?height=600)
+![](/images/McDonalds_App_ScreenShot.jpg?height=600)
 
 All you need to do is order a large soda (or any size that you want) to get this coupon to work. If you go frequently enough to McDonald's, you already know that all the sizes have the same price, 1 dollar.
 
 After you pick up the sandwich, you are going to make a second order and use this other coupon:
 
-![](./images/McDonalds_App_ScreenShot2.jpg?height=600)
+![](/images/McDonalds_App_ScreenShot2.jpg?height=600)
 
 I usually do this through the drive thru, so yeah I'm eating my sandwich while I'm waiting for my fries.
 

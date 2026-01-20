@@ -4,7 +4,7 @@ slug: work-from-home-kvm-switch
 date: 2021-03-29T15:10:14
 categories: ["Technology", "The Noah Noah"]
 author: Noe Rodriguez
-featured_image: "./images/kvmswitch.jpg"
+featured_image: "/images/kvmswitch.jpg"
 ---
 I have been lucky enough to be able to work from home since this horrific COVID-19 pandemic started. As most of us working remotely, we need to connect to a VPN to get access to our work systems, using our work computer. The problem is that if you are like me, you also own a personal computer, and since we spend most of our day at home, it's hard to separate what we do in our work computer and what we do in our personal one.
 
@@ -18,7 +18,7 @@ Honestly, it has been the best investment for my home office besides my office c
 
 The one I bought is this one:
 
-![](./images/kvmswitch.jpg?width=300)
+![](/images/kvmswitch.jpg?width=300)
 
 I never used a product from Greathtek before, but so far, it's really good and also you don't need to install any drivers, it works out of the box.
 

@@ -1,0 +1,34 @@
+{{ if .Site.Params.showBreadcrumb }}
+<div class="fairy-breadcrumb-wrapper">
+	<div class="breadcrumbs">
+		<span>
+			<a href="{{ .Site.BaseURL }}">{{ i18n "home" | default "Home" }}</a>
+		</span>
+		<span class="breadcrumb-separator"> / </span>
+        
+        {{ if eq .Type "post" }}
+             {{/* Posts Section Link */}}
+             {{ with .Site.GetPage "section" "post" }}
+             <span><a href="{{ .RelPermalink }}">{{ .Title | default "Posts" }}</a></span>
+             {{ else }}
+             <span><a href="{{ "post/" | relLangURL }}">Posts</a></span>
+             {{ end }}
+             <span class="breadcrumb-separator"> / </span>
+             
+             <!-- Year -->
+             <span>{{ .Date.Format "2006" }}</span>
+             <span class="breadcrumb-separator"> / </span>
+             
+             <!-- Month -->
+             <span>{{ .Date.Format "01" }}</span>
+             <span class="breadcrumb-separator"> / </span>
+             
+             <!-- Day -->
+             <span>{{ .Date.Format "02" }}</span>
+             <span class="breadcrumb-separator"> / </span>
+        {{ end }}
+
+		<span class="breadcrumb-current">{{ .Title }}</span>
+	</div>
+</div>
+{{ end }}

@@ -3,6 +3,7 @@ canonifyURLs = true
 languageCode = 'en-us'
 title = 'The Noah Noah'
 theme = "fairy-hugo"
+googleAnalytics = "G-9CFXRLCZGJ"
 
 [pagination]
   pagerSize = 10

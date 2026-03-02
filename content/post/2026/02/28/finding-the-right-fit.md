@@ -1,5 +1,13 @@
-## Finding the Right Fit: A Tale of Two Saints and a Godparent Certificate
-
+---
+title: "Finding the Right Fit: A Tale of Two Saints and a Godparent Certificate"
+slug: finding-the-right-fit
+date: 2026-02-28T20:18:51
+categories: ["Parenting", "The Noah Noah"]
+featured_image: "/images/don-bosco-elizabeth-ann-seton.jpg"
+images: 
+  - "/images/don-bosco-elizabeth-ann-seton.jpg"
+author: Noe Rodriguez
+---
 When I was a kid growing up in Mexico City, my education from elementary through high school was at a Catholic school called Instituto Don Bosco. It was run by the Salesians, and I always really enjoyed their style. They were relaxed, approachable, and focused on the motto "**hodie labor, cras fructus**"—which means "work today, enjoy the fruits later." They believed in teaching with kindness and heart, rather than using fear or strict discipline.
 
 When I moved to Wisconsin, I naturally looked for a Salesian church near my home. Unfortunately, the closest one was across the border in Illinois, which was just too far of a drive. I ended up joining the Basilica of Saint Josaphat in Milwaukee instead. To be honest, it was a great setup for a while. The building is absolutely awesome to look at, but the real selling point was that it was right next door to Carnitas Don Lucho. This let me keep a cherished family tradition alive from my childhood: going to church on Sunday and then heading straight out for some delicious barbacoa or carnitas for breakfast.

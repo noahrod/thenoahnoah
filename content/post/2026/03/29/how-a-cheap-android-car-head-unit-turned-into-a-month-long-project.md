@@ -1,3 +1,14 @@
+---
+title: "How a Cheap Android Car Head Unit Turned into a Month-Long Project"
+slug: how-a-cheap-android-car-head-unit-turned-into-a-month-long-project
+date: 2026-03-29T15:36:51
+categories: ["Technology", "The Noah Noah"]
+featured_image: "/images/nissan-sentra-2019-asure-car-radio.png"
+images: 
+  - "/images/nissan-sentra-2019-asure-car-radio.png"
+author: Noe Rodriguez
+---
+
 I had no experience doing this kind of work. I pretty much relied on good luck and YouTube University. Looking back, that was already my first mistake. I started watching videos after I had already started the project, when what I really should have done was prepare way more before touching anything.
 
 If I had to do it again, the very first thing I would do is remove the OEM radio and just study what was already there from the factory. Before buying the new unit, most of my research was about finding a car-compatible head unit, but I focused way too much on the Android version and the "computer" specs like RAM, storage, and CPU. I should have spent a lot more time understanding the cable interfaces and connectors for my specific car.

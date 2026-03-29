@@ -38,3 +38,5 @@ After that, I started wondering if my OEM camera had really burned out, or if th
 But yeah, long story short, next time I am probably just buying a Pioneer from Best Buy and paying Geek Squad to install it. I spent way too many hours on this. Still, I learned a lot, and now I understand why they call it an "entertainment system".
 
 If I got anything valuable out of this whole mess, it is that projects like this are not just about buying the radio with the best specs. You really need to understand the wiring, the connectors, the adapters, and all the little parts that do not look important until they suddenly are. It was frustrating, and at some points I really thought I had made a huge mistake, but in the end it all worked out. So **I am happy I did it... even if I do not want to do it again.**
+
+Here is the link for the Android Car Head Unit I installed: [A-Sure 8-Core 6G+128G Car Radio for Nissan Sentra (2016-2019)](https://www.walmart.com/ip/Asure-8-Core-6G-128G-Car-Radio-Nissan-Sentra-2016-2019-10-1-Android-15-Stereo-Apple-CarPlay-4G-LTE-GPS-Nav-Wi-Fi-BT-5-4-Backup-Camera/19227972368)

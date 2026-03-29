@@ -33,6 +33,8 @@ At that point **I was** seriously **done**. I had already spent more than a mont
 
 I kept asking myself why the cheap Chinese camera would work, but not the Amazon one or the OEM one. I already had power and signal going back to the trunk, so something was clearly off. That is when **I finally figured it out**. **The 40-pin cable I bought had two pins reversed.** I guess the quality control on that cable was not exactly great. So I depinned the connector, swapped the wires into the correct order, and boom, the camera worked!
 
+![[/images/nissan-sentra-2019-asure-car-radio.png]]
+
 After that, I started wondering if my OEM camera had really burned out, or if this bad cable had been the real problem all along. So I tested the OEM camera again and guess what, it worked too. **Everything was finally working**: the GPS, the 4G, CarPlay, Android Auto, the steering wheel buttons, and the reverse camera. **I was so happy with the outcome.**
 
 But yeah, long story short, next time I am probably just buying a Pioneer from Best Buy and paying Geek Squad to install it. I spent way too many hours on this. Still, I learned a lot, and now I understand why they call it an "entertainment system".
